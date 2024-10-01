@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr.RICH.ai</title>
+<style>
+</style>
+</head>
+<body>
+
+<div id="overlay">
+  <!--首頁-->
+  <iframe id="iframe_" src="https://dive.nutn.edu.tw/Experiment/kaleTestExperiment5.jsp?eid=31792&record=false" frameborder="0" name="index" width="100%" height="730px"></iframe>
+</div>
+
+<script src="https://dive.nutn.edu.tw/Experiment/js/dive.linker.js"></script>
+<script src="script.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics-compat.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCx0VdXySEo6aFuMz4ysrBP7BWbDm7pMhc",
+    authDomain: "dr-rich-ai.firebaseapp.com",
+    databaseURL: "https://dr-rich-ai-default-rtdb.firebaseio.com",
+    projectId: "dr-rich-ai",
+    storageBucket: "dr-rich-ai.appspot.com",
+    messagingSenderId: "712005667872",
+    appId: "1:712005667872:web:2396ca0489acc4a41c4045",
+    measurementId: "G-4ERQNXT0Q3"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  // Initialize Realtime Database
+  const db = firebase.database();
+
+  console.log("Firebase initialized successfully.");
+</script>
+
+</body>
+</html>
